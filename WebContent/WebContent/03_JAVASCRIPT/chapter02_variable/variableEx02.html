@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>데이터의 형변환(casting)</title>
+<script>
+
+	// 1) 숫자 > 문자열
+	var nData1 = 1;
+	console.log("nData1 : " , typeof nData1);
+	
+	//var strData1 = String(nData1);		// String(문자열 형변환 클래스)
+	var strData1 = nData1 + "";
+	console.log("strData1 : " , typeof strData1);
+	
+	
+	console.log("");
+	
+	
+	// 2) 문자열 > 숫자
+	var strData2 = "100";
+	console.log("strData2 : " , typeof strData2);
+	
+	var nData2 = Number(strData2); // Number(숫자형 형변환 클래스)
+	console.log("nData2 :" , typeof nData2);
+
+</script>
+</head>
+<body>
+</body>
+</html>

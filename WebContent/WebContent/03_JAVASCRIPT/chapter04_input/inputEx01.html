@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>prompt</title>
+<script>
+	
+	/*
+	
+		[형식]
+		
+		prompt("안내문자열","기본값");
+		
+		
+		- 기본 데이터 타입은 문자열이다.
+		
+	*/
+	
+	var getData1 = prompt("학년을 입력하세요.");
+	document.write(typeof getData1 , getData1 , "<br/>");
+	
+	var getData2 = prompt("학년을 입력하세요." , "1");
+	document.write(typeof getData2 , getData2 , "<br/>");
+
+	var getHtmlGrade = prompt("html점수" , "0");
+	var getCssGrade  = prompt("css점수" , "0");
+	var getJsGrade   = prompt("js점수" , "0");
+	
+	var total =  Number(getHtmlGrade) + 
+				 Number(getCssGrade) + 
+				 Number(getJsGrade);
+	
+	document.write(total);
+	
+</script>
+</head>
+<body>
+</body>
+</html>
